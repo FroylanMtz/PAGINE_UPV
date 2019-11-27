@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;edu.upv.app_analisis_tuits&apos; to &apos;nlp-demo1/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;app_analisis_tuits&apos;&#x0D;&#x0A;- Destination element: &apos;nlp-demo1/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;app_analisis_tuits/src/main/java/edu.upv.app_analisis_tuits&apos;" description="Copy package" destination="=nlp-demo1/src\/main\/java" element1="/src\/main\/java&lt;edu.upv.app_analisis_tuits" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1574782493176" version="1.0"/>
+</session>
