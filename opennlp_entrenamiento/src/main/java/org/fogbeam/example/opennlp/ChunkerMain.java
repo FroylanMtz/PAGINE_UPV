@@ -19,7 +19,6 @@ public class ChunkerMain
 			
 			ChunkerME chunker = new ChunkerME(model);
 			
-			
 			/* Ordinarily you'd use a Tokenizer to do this */
 			String sent[] = new String[] { "Rockwell", "International", "Corp.", "'s",
 				    "Tulsa", "unit", "said", "it", "signed", "a", "tentative", "agreement",

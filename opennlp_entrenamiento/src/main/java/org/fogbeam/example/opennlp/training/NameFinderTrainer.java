@@ -28,7 +28,7 @@ public class NameFinderTrainer
 		TokenNameFinderModel model;
 		try
 		{
-			model = NameFinderME.train( "es", "person", sampleStream,
+			model = NameFinderME.train("es", "person", sampleStream,
 					TrainingParameters.defaultParams(), (byte[]) null,
 					Collections.<String, Object> emptyMap() );
 		}

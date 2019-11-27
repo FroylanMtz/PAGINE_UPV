@@ -37,7 +37,7 @@ def main():
     #for a in lista_archivos:
     #    print("Procesando... " + a)
 
-    tuits = cargarTuits("presidente_2019_10_18_05_00_54.json")
+    tuits = cargarTuits("presidente_2019_10_21_05_00_46.json")
     token_tuit = []
     etiquetas = []
 
