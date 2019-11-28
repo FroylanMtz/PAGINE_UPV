@@ -33,10 +33,8 @@ def main():
     carpetas = cargarNombresArchivos("tuits_limpios/")
     #print(lista_archivos)
     for carpeta in carpetas:
-
         print("Carpeta: " + carpeta)
         archivos = cargarNombresArchivos("tuits_limpios/" + carpeta)
-
         for archivo in archivos:
             print("Archivo " + archivo)
             tuits = cargarTuits("tuits_limpios/" + carpeta + "/" +archivo)
@@ -51,39 +49,15 @@ def main():
 
                 for j in range( len(etiquetas) ):
 
-                    oracion = oracion + etiquetas[j][0] + " "
-
-                    if( j < len(etiquetas) - 1 ):
-                        if( etiquetas[j][1] != "PERS" and etiquetas[j+1][1] == "PERS"):
-                            oracion = oracion + "<START:person> "
-                            oracion  = oracion + etiquetas[j][0]
-                            hayPersona = True
-                        
-                        if( etiquetas[j][1] == "PERS" and etiquetas[j+1][1] != "PERS"):
-                            oracion = oracion + "<END> "
-                            hayPersona = True
-
-                    if( j < len(etiquetas) - 1 ):
-                        if( etiquetas[j][1] != "ORG" and etiquetas[j+1][1] == "ORG"):
-                            oracion = oracion + "<START:person> "
-                            hayPersona = True
-                        
-                        if( etiquetas[j][1] == "ORG" and etiquetas[j+1][1] != "ORG"):
-                            oracion = oracion + "<END> "
-                            hayPersona = True
-
-                    if(etiquetas[j][1] == "PERS" and j == len(etiquetas)-1 ):
-                        oracion = oracion + " <END>"
+                    if( etiquetas[j][1] == "PERS" ):
+                        oracion = oracion + etiquetas[j][0] + " "
                         hayPersona = True
 
-                    if(etiquetas[j][1] == "ORG" and j == len(etiquetas)-1 ):
-                        oracion = oracion + " <END>"
-                        hayPersona = True
 
                 if(hayPersona):
                     i = i + 1
                     documento.write(oracion+"\n")
-                    print("Tuit #" + str(i) )
+                    print("Tuit #" + str(i) + " " + oracion)
 
     
     documento.close()
