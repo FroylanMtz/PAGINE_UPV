@@ -17,7 +17,6 @@ def cargarTuits(archivo):
 
     return tuits
 
-
 def cargarNombresArchivos(directorio):
     archivos = os.listdir(directorio)
     return archivos
@@ -31,7 +30,6 @@ def main():
 
     i = 0
     carpetas = cargarNombresArchivos("tuits_limpios/")
-    #print(lista_archivos)
     for carpeta in carpetas:
         print("Carpeta: " + carpeta)
         archivos = cargarNombresArchivos("tuits_limpios/" + carpeta)
@@ -52,7 +50,6 @@ def main():
                     if( etiquetas[j][1] == "PERS" ):
                         oracion = oracion + etiquetas[j][0] + " "
                         hayPersona = True
-
 
                 if(hayPersona):
                     i = i + 1
