@@ -1,8 +1,6 @@
-INDEX VERSION 1.131+C:\Users\Estancia\Desktop\Prototipo de gestion de informacion no estructurada\UIMA_APP_UPV\.metadata\.plugins\org.eclipse.jdt.core
-2518328822.index
-625441837.index
-2548293164.index
-2977493983.index
-131857957.index
-923086704.index
+INDEX VERSION 1.131+C:\Users\froy1\Desktop\PGINE_UPV\UIMA_APP_UPV\.metadata\.plugins\org.eclipse.jdt.core
 2682640291.index
+2548293164.index
+3066320900.index
+2994538707.index
+3624372097.index
